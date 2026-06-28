@@ -41,3 +41,14 @@
 - 公開HTML上のローカルリンクに、存在しないファイルへの参照がないことを確認。
 - `RAW` の件数が 29,463 件のまま変わっていないことを確認。
 
+## GitHub Pages 公開後確認
+
+- 公開URL `https://missmarker.github.io/nicolive-survey-room/` が 200 OK で取得できることを確認。
+- 公開HTML内の `RAW` 件数が 29,463 件のまま変わっていないことを確認。
+- 公開HTML上で `Kaisei Opti`、`Zen Kaku Gothic New`、`display=swap` の指定を確認。
+- ブラウザでヘッダー、フォント、検索、年別、作品から探す、ランキングを確認。
+- `privacy.html` と `affiliate-disclosure.html` が GitHub Pages 上で開けることを確認。
+- ブラウザのコンソールエラーが出ていないことを確認。
+- 公開ページ本文に `AI`、`ChatGPT`、`v27`、`プレビュー`、`この版` が出ていないことを確認。
+- 古い `docs/QA_REPORT_v26.md`、`docs/QA_REPORT_v27.md`、`docs/validation_summary_v27.json` は公開用docsから削除。
+
