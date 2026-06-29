@@ -7,6 +7,7 @@
 - `index.html` — 公開ページ本体。ヘッダー画像、スタイル、検索用スクリプト、29,463件のデータを含む単一HTMLです。
 - `data/survey_data.csv` — `index.html` に埋め込む元データCSVです。
 - `data/inbox/recent_rows_template.csv` — 追加データ入力用のひな形です。
+- `data/affiliate_config.json` — 楽天アフィリエイトリンクの設定ファイルです。
 - `tools/validate_data.py` — データ検証用スクリプトです。
 - `tools/merge_recent.py` — 追加データを既存CSVに統合するスクリプトです。
 - `tools/build_site.py` — CSVとテンプレートから `index.html` を再生成するスクリプトです。
