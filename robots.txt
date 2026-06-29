@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /nicolive-survey-room/
+
+Disallow: /nicolive-survey-room/admin.html
+Disallow: /nicolive-survey-room/docs/
+
+Sitemap: https://missmarker.github.io/nicolive-survey-room/sitemap.xml
