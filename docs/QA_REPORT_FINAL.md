@@ -52,3 +52,10 @@
 - 公開ページ本文に `AI`、`ChatGPT`、`v27`、`プレビュー`、`この版` が出ていないことを確認。
 - 古い `docs/QA_REPORT_v26.md`、`docs/QA_REPORT_v27.md`、`docs/validation_summary_v27.json` は公開用docsから削除。
 
+## 公開向け注意文の調整
+
+- 「このサイトについて」から運営者向けの黄色い注意枠を削除。
+- 代わりに、掲載データの表記ゆれや欠落に関する公開向けの案内文を追加。
+- 同じ変更を `src/index.template.html` にも反映。
+- 運営者向け確認は `docs/PUBLISH_CHECKLIST.md` に整理。
+

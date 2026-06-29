@@ -26,5 +26,6 @@
 - [ ] `affiliate-disclosure.html` を確認した。
 - [ ] `admin.html` に `noindex` が入っている。
 - [ ] 外部CSVのURLをコードに直書きしていない。
+- [ ] 外部CSVや一覧データを利用する場合、利用条件と出典表示を確認した。
 - [ ] GitHub Actionsを使う場合、`UPSTREAM_CSV_URL` を GitHub Secrets に設定した。
 - [ ] 公開先に不要な一時ファイル、キャッシュ、作業フォルダを含めていない。
