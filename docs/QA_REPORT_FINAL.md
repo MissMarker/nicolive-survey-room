@@ -161,3 +161,46 @@
 - `rel="sponsored nofollow noopener noreferrer"` 維持: OK
 - 検索、年別、作品から探す、ランキング、作品詳細のDOM実行検証: OK
 - `index.html` 内のRAW件数: 29,463件
+
+
+## 2026-06-29 複数収益源対応の土台追加
+
+- `index.html` と `src/index.template.html` に `MONETIZE_CONFIG` を追加し、楽天を有効、AmazonアソシエイトとGoogle AdSenseを無効状態で整理しました。
+- AmazonタグやAdSenseコードは未設定のため、公開ページに空広告枠は表示しない構成にしました。
+- 楽天の固定広告HTMLとURLは維持し、広告文言は「スポンサーリンク」「アニメ関連商品の広告リンクです。」に統一しました。
+- `articles/` に読み物・使い方の記事ページ10本を追加しました。各記事はトップページ、プライバシーポリシー、広告についてへのリンクを持ち、下部にスポンサーリンク枠を1つだけ表示します。
+- `affiliate-disclosure.html` を、楽天アフィリエイト等の広告リンク、将来のAmazonアソシエイトやGoogle AdSense利用可能性、データと広告の分離が分かる文面に更新しました。
+- `sitemap.xml` にトップページ、プライバシーポリシー、広告について、記事10本を追加しました。
+- `docs/MONETIZATION_SETUP.md` と `docs/SEO_NEXT_STEPS.md` を作成しました。
+
+確認結果:
+- ホーム、データ検索、年別・クール別、作品から探す、ランキング、作品詳細のDOM実行検証: OK
+- 作品詳細、ホーム、ランキングのスポンサーリンク枠: OK
+- 記事ページ10本の存在、トップページ・プライバシーポリシー・広告についてへのリンク: OK
+- `privacy.html`、`affiliate-disclosure.html`、`sitemap.xml` の存在: OK
+- 楽天リンクと `rel="sponsored nofollow noopener noreferrer"` 維持: OK
+- 存在しない内部リンクなし: OK
+- JavaScript構文確認、テンプレートからのビルド確認: OK
+- `tools/validate_data.py` によるCSV検証: 29,463件、エラー0件
+- `index.html` 内のRAW件数: 29,463件
+
+
+## 2026-06-29 複数収益源対応後の最終確認
+
+- `MONETIZE_CONFIG` 追加後も、データ変換に必要な列名定義を維持してJavaScriptが動作することを確認しました。
+- 記事ページ10本は、それぞれトップページ、プライバシーポリシー、広告についてへのリンクを持ち、記事下部にスポンサーリンク枠を1つだけ表示することを確認しました。
+- `sitemap.xml` はトップページ、`privacy.html`、`affiliate-disclosure.html`、記事10本の合計13URLを含むことを確認しました。
+
+最終確認結果:
+- ホーム、データ検索、年別・クール別、作品から探す、ランキング、作品詳細: OK
+- 作品名クリックによる詳細表示と作品詳細PR枠: OK
+- ホーム、ランキングのスポンサーリンク枠: OK
+- 記事ページ10本の存在と内部リンク: OK
+- `privacy.html`、`affiliate-disclosure.html`、`sitemap.xml`: OK
+- 楽天リンク、楽天HTML、`rel="sponsored nofollow noopener noreferrer"`: OK
+- Amazonアソシエイト、Google AdSenseは無効状態で、架空タグや空広告枠なし: OK
+- 旧広告文言「関連商品を探す」「作品名の関連商品です。」なし: OK
+- 公開ページの制作途中風文言なし: OK
+- テンプレートからのビルド: 29,463件でOK
+- `tools/validate_data.py`: 29,463件、エラー0件
+- `index.html` 内のRAW件数: 29,463件
