@@ -17,6 +17,7 @@ PERCENT_KEYS = {"p1", "p2", "p3", "p4", "p5"}
 DEFAULT_AFFILIATE_CONFIG = {
     "enabled": False,
     "siteName": "ニコ生アニメアンケート資料室",
+    "rakutenHtml": [],
     "rakutenLinks": [],
 }
 
